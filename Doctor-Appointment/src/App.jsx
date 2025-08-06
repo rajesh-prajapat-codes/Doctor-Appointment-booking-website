@@ -12,6 +12,8 @@ import Navbar from './components/Navbar'
 import MyAppointment from './pages/MyAppointment'
 import Appointment from './pages/Appointment'
 import Header from './components/Header'
+import SpecialityMenu from './components/SpecialityMenu'
+import TopDoctor from './components/TopDoctor'
 
 function App() {
 
@@ -30,7 +32,9 @@ function App() {
         <Route path = '/my-appointments' element = {<MyAppointment/>}/>
         <Route path = '/appointment/:docId' element = {<Appointment/>}/>
       </Routes>
-      <Header/>
+      <Header />
+      <SpecialityMenu />
+      <TopDoctor/>
 
     </div>
   )
